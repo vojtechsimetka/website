@@ -22,10 +22,11 @@ const event = EventsData.filter(
 export default () => (
   <section className="experiences">
     <h1>Public Speaking</h1>
-    {event.map(ed => (
+    {event.map((ed, index) => (
       <div
         className="item"
         style={{ padding: 0, paddingBottom: ".5em", margin: 0 }}
+        key={index}
       >
         <div className="heading">
           <span className="h4 title">
@@ -46,8 +47,8 @@ export default () => (
           </div>
         </div>
         {ed.talk &&
-          ed.talk.map((talk: ITalk) => (
-            <div>
+          ed.talk.map((talk: ITalk, index: number) => (
+            <div key={index}>
               <i>{talk.type}</i>
               {talk.title && (
                 <span>

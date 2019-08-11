@@ -59,7 +59,7 @@ export default class Events extends React.Component<
 
   render() {
     return (
-      <section className="publications">
+      <section className="events">
         <h1>Events</h1>
         <p>Come and meet me in one of these events or invite me to yours.</p>
         <div style={{ paddingBottom: "1em" }}>
@@ -79,8 +79,9 @@ export default class Events extends React.Component<
           />{" "}
           <label>Show only events where I am speaking</label>
         </div>
-        {this.state.events.map((ed: Event) => (
+        {this.state.events.map((ed: Event, index: number) => (
           <div
+            key={index}
             style={{
               display: "grid",
               gridTemplateColumns: "7em auto",
@@ -113,8 +114,8 @@ export default class Events extends React.Component<
               </span>
             </div>
             {ed.talk &&
-              ed.talk.map((talk: ITalk) => (
-                <div>
+              ed.talk.map((talk: ITalk, index: number) => (
+                <div key={index}>
                   <i>{talk.type}</i>
                   {talk.title && (
                     <span>

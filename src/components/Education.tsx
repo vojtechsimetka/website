@@ -4,8 +4,8 @@ import EducationData from "data/Education";
 export default () => (
   <section className="education">
     <h1>Education</h1>
-    {EducationData.map(ed => (
-      <div className="item">
+    {EducationData.map((ed, index) => (
+      <div className="item" key={index}>
         <h2 className="university">
           <a href={ed.link} target="blank">
             {ed.schoolName}

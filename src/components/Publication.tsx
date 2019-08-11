@@ -4,14 +4,14 @@ import Publication from "models/Publication";
 
 export default ({ data }: { data: Array<Publication> }) => (
   <div>
-    {data.map(pd => (
-      <div className="item">
+    {data.map((pd, index) => (
+      <div className="item" key={index}>
         <div className="heading">
           <div>
             <span className="h4 title">
               {pd.title}
-              {pd.links.map(l => (
-                <a href={l.url} target="blank">
+              {pd.links.map((l, index) => (
+                <a href={l.url} target="blank" key={index}>
                   {" "}
                   [{l.language}]
                 </a>

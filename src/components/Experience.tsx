@@ -3,8 +3,8 @@ import Work from "models/Work";
 
 export default ({ data }: { data: Array<Work> }) => (
   <div>
-    {data.map(wed => (
-      <div className="item">
+    {data.map((wed, index) => (
+      <div className="item" key={index}>
         <div className="heading">
           <div>
             <span className="h2 company">
@@ -31,8 +31,8 @@ export default ({ data }: { data: Array<Work> }) => (
           {wed.shortDescription && <p>{wed.shortDescription}</p>}
           {wed.bulletPoints && (
             <ul>
-              {wed.bulletPoints.map(bpd => (
-                <li>{bpd}</li>
+              {wed.bulletPoints.map((bpd, index) => (
+                <li key={index}>{bpd}</li>
               ))}
             </ul>
           )}

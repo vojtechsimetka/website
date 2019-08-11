@@ -4,8 +4,8 @@ import Projects from "data/Projects";
 export default () => (
   <section className="projects">
     <h1>Projects</h1>
-    {Projects.map(pd => (
-      <div className="item">
+    {Projects.map((pd, index) => (
+      <div className="item" key={index}>
         <span className="h3 project">
           <a href={pd.url} target="blank">
             {pd.name}
