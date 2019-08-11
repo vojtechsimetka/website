@@ -2,7 +2,7 @@ import React from "react";
 import EventsData from "data/Events";
 import Event, { ITalk } from "models/Event";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVideo, faFile } from "@fortawesome/free-solid-svg-icons";
+import { faPlayCircle, faFile } from "@fortawesome/free-solid-svg-icons";
 
 interface IEventsProps {}
 interface IEventsState {
@@ -77,7 +77,7 @@ export default class Events extends React.Component<
             onChange={this.toggleTalksOnly}
             defaultChecked={this.state.talksOnly}
           />{" "}
-          <label>Show only events where I'm speaking</label>
+          <label>Show only events where I am speaking</label>
         </div>
         {this.state.events.map((ed: Event) => (
           <div
@@ -99,7 +99,13 @@ export default class Events extends React.Component<
             </div>
             <div className="heading">
               <span className="h4 title">
-                {ed.url ? <a href={ed.url}>{ed.title}</a> : ed.title}
+                {ed.url ? (
+                  <a href={ed.url} target="blank">
+                    {ed.title}
+                  </a>
+                ) : (
+                  ed.title
+                )}
               </span>
 
               <span className="place">
@@ -114,10 +120,15 @@ export default class Events extends React.Component<
                     <span>
                       : <strong>{talk.title}</strong>
                     </span>
-                  )}{" "}
+                  )}
                   {talk.video && (
-                    <a href={talk.video} target="blank" title="Play Video">
-                      <FontAwesomeIcon icon={faVideo} />
+                    <a
+                      href={talk.video}
+                      target="blank"
+                      title="Play Video"
+                      style={{ marginLeft: ".3em" }}
+                    >
+                      <FontAwesomeIcon icon={faPlayCircle} />
                     </a>
                   )}
                   {talk.presentation && (
@@ -125,6 +136,7 @@ export default class Events extends React.Component<
                       href={talk.presentation}
                       target="blank"
                       title="See Slides"
+                      style={{ marginLeft: ".3em" }}
                     >
                       <FontAwesomeIcon icon={faFile} />
                     </a>

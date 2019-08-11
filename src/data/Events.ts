@@ -118,7 +118,12 @@ export default [
         type: ETalkType.PRESENTATION,
         video: "https://youtu.be/LwVgnPIWPkM?t=612"
       },
-      { title: "Blockchain for Humanity", type: ETalkType.PRESENTATION }
+      {
+        title: "Blockchain for Humanity",
+        type: ETalkType.PRESENTATION,
+        presentation:
+          "https://docs.google.com/presentation/d/1cNUXadMeZnGgYLViMQ1EjWNn04PgLRTJ6KP0KLiNKDw/edit?usp=sharing"
+      }
     ]
   ),
   new Event(
@@ -147,6 +152,36 @@ export default [
     null
   ),
   new Event(
+    "Coalitions 4 GOOD: BC4G Crypto Valley and Blockchain for Humanity",
+    EEventType.CONFERENCE,
+    new Date("2019-04-03"),
+    new Date("2019-04-03"),
+    "Geneva",
+    ELocations.SWITZERLAND,
+    "https://www.meetup.com/Blockchain4Humanity-Geneva/events/259532524/",
+    [
+      {
+        title: "Panel Discussion: Mass adoption: reality or myth?",
+        type: ETalkType.PANEL
+      }
+    ]
+  ),
+  new Event(
+    "Social Innovation: International Development and Blockchain",
+    EEventType.CONFERENCE,
+    new Date("2019-03-29"),
+    new Date("2019-03-29"),
+    "Montreal",
+    ELocations.CANADA,
+    "http://blockchainmcgill.com/socialinnovation/#",
+    [
+      {
+        title: "Lessons learned from building Giveth DApp",
+        type: ETalkType.PRESENTATION
+      }
+    ]
+  ),
+  new Event(
     "ETHDenver",
     EEventType.HACKATHON,
     new Date("2019-02-15"),
@@ -168,7 +203,9 @@ export default [
       {
         title: "Blockchain for Humanity Awards 2018",
         type: ETalkType.PRESENTATION,
-        video: "https://www.youtube.com/watch?v=rusDrIErdkc"
+        video: "https://www.youtube.com/watch?v=rusDrIErdkc",
+        presentation:
+          "https://drive.google.com/open?id=1VLrZoUuQJBA4f_FGkS95_abqghx4_ypZ"
       }
     ]
   ),
@@ -220,7 +257,9 @@ export default [
       {
         title: "Giveth and Scaling Challenges",
         type: ETalkType.PRESENTATION,
-        video: "https://youtu.be/Fe135LnFQaE"
+        video: "https://youtu.be/Fe135LnFQaE",
+        presentation:
+          "https://drive.google.com/open?id=1qaKszbvuXwK3aXGVvswaeKiNc2xNvdcP"
       }
     ]
   ),
@@ -291,14 +330,7 @@ export default [
     "Bogota",
     ELocations.COLOMBIA,
     "https://www.labitconf.com/",
-    [
-      {
-        title: "Startups and Blockchain for Purpose",
-        type: ETalkType.PANEL,
-        video:
-          "https://www.youtube.com/watch?v=Pwn3tEh_BU8&feature=youtu.be&t=2h56m15s"
-      }
-    ]
+    null
   ),
   new Event(
     "Humanitarian Blockchain Summit",

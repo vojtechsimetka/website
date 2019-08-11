@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVideo, faFile } from "@fortawesome/free-solid-svg-icons";
+import { faPlayCircle, faFile } from "@fortawesome/free-solid-svg-icons";
 import EventsData from "data/Events";
 import Event, { ITalk, ETalkType } from "models/Event";
 
@@ -29,7 +29,13 @@ export default () => (
       >
         <div className="heading">
           <span className="h4 title">
-            {ed.url ? <a href={ed.url}>{ed.title}</a> : ed.title}
+            {ed.url ? (
+              <a href={ed.url} target="blank">
+                {ed.title}
+              </a>
+            ) : (
+              ed.title
+            )}
           </span>
 
           <div>
@@ -47,14 +53,24 @@ export default () => (
                 <span>
                   : <strong>{talk.title}</strong>
                 </span>
-              )}{" "}
+              )}
               {talk.video && (
-                <a href={talk.video} target="blank" title="Play Video">
-                  <FontAwesomeIcon icon={faVideo} />
+                <a
+                  href={talk.video}
+                  target="blank"
+                  title="Play Video"
+                  style={{ marginLeft: ".3em" }}
+                >
+                  <FontAwesomeIcon icon={faPlayCircle} />
                 </a>
               )}
               {talk.presentation && (
-                <a href={talk.presentation} target="blank" title="See Slides">
+                <a
+                  href={talk.presentation}
+                  target="blank"
+                  title="See Slides"
+                  style={{ marginLeft: ".3em" }}
+                >
                   <FontAwesomeIcon icon={faFile} />
                 </a>
               )}

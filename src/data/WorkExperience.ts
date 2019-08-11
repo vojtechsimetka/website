@@ -37,7 +37,7 @@ export default [
   new Work(
     "CERN",
     "Software Developer",
-    "Member of a configuration and layout section helping to create and maintain documentation in form of pictures and drawings for all current machines.",
+    "Member of a configuration and layout section helping to create and maintain documentation in the form of pictures and drawings for all current machines.",
     [
       "Specifying, designing, developing and maintaining system for 360° panoramic images to reduce radiation exposure (Java, Spring, HTML, Javascript, Oracle DB)",
       "Capturing images in the supervised and controlled radiation areas, processing, stitching and uploading to a DB system (Lightroom, Photoshop, Kolor Autopano)",
@@ -54,13 +54,13 @@ export default [
   new Work(
     "INGE",
     "IT Consultant",
-    "External consultant inspecting the IT system and processes while obtaining university degree.",
+    "External consultant inspecting the IT system and processes while obtaining a university degree.",
     [
       "Designing and creating interactive product catalogue for iPad (iBooks Author)",
       "Auditing IT systems and processes",
       "Analyzing needs and creating specification for new website",
       "Developing internal product database system (PHP, MySQL, JavaScript)",
-      "Specifying, communicating and overseeing development of database system with DIAL GmbH"
+      "Specifying, communicating and helping to delever a database system with DIAL GmbH"
     ],
     new Date("2012-07-01"),
     new Date("2015-09-01"),
@@ -73,7 +73,7 @@ export default [
     "Summer Internship",
     "10 weeks of morning physics and computing lectures, afternoon work optimising the CMS experiment software and networking evenings with the brightest students from around the world.",
     [
-      "Creating an automated system to profile DQM workflows. The profiling results were available in a automatically generated website (IgProf, Valgrind, Bash).",
+      "Creating an automated system to profile DQM workflows. The profiling results were available in an automatically generated website (IgProf, Valgrind, Bash).",
       "Profiling and optimising the Data Quality Monitoring (DQM) Software of the CMS experiment (C++).",
       "Proposing a set of good practices to be followed by non-IT contributors."
     ],
