@@ -32,6 +32,7 @@ export default new Contact(
     }
   ],
   "vojtechsimetka",
+  "vojtechsimetka",
   "vojtech.simetka",
   "vojtechsimetka",
   "vojtechsimetka",

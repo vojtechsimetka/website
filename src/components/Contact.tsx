@@ -6,7 +6,8 @@ import {
   faTelegram,
   faGithub,
   faLinkedin,
-  faInstagram
+  faInstagram,
+  faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
 import ContactData from "data/Contact";
@@ -50,6 +51,14 @@ export default () => (
             target="blank"
           >
             in/{ContactData.linkedin}
+          </a>
+        </li>
+      )}
+      {ContactData.twitter && (
+        <li className="twitter">
+          <FontAwesomeIcon icon={faTwitter} />{" "}
+          <a href={`https://twitter.com/${ContactData.twitter}`} target="blank">
+            tw/{ContactData.twitter}
           </a>
         </li>
       )}

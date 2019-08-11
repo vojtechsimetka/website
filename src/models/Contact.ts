@@ -11,6 +11,7 @@ export interface IEmails {
 export default class {
   readonly name: string;
   readonly tagline: string;
+  readonly twitter: string | null;
   readonly linkedin: string | null;
   readonly facebook: string | null;
   readonly github: string | null;
@@ -25,6 +26,7 @@ export default class {
     tagline: string,
     description: string,
     bulletPoints: Array<IBulletPoints>,
+    twitter: string | null,
     linkedin: string | null,
     facebook: string | null,
     github: string | null,
@@ -36,6 +38,7 @@ export default class {
     this.tagline = tagline;
     this.description = description;
     this.bulletPoints = bulletPoints;
+    this.twitter = twitter;
     this.linkedin = linkedin;
     this.facebook = facebook;
     this.github = github;
