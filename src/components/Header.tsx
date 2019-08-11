@@ -4,6 +4,7 @@ import ContactData from "data/Contact";
 export default () => (
   <div>
     <div
+      className="profile"
       style={{
         height: "90vh",
         backgroundImage: "url('profile.jpg')",

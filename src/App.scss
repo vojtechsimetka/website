@@ -131,16 +131,6 @@ li:last-child {
 .sidebar-wrapper {
   width: 16.5em;
 
-  .profile {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-    }
-  }
-
   .contact {
     .fa {
       margin-right: 0.5em;
@@ -297,17 +287,6 @@ div.description {
     flex-wrap: wrap;
     padding: 1em;
 
-    .profile {
-      overflow: hidden;
-      padding: 1em;
-
-      img {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    }
-
     section {
       flex-direction: column;
       flex: 0.5 15em;
@@ -367,4 +346,40 @@ div.description {
 
 .toggle:checked:before {
   left: 16px;
+}
+
+@media print {
+  .profile {
+    display: none;
+  }
+  .wrapper {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar-wrapper {
+    width: 15em;
+    margin: 0;
+    padding: 0;
+
+    section {
+      flex-direction: column;
+      flex: 15em;
+      padding: 0.5em;
+      margin: 0;
+    }
+  }
+
+  .main-wrapper {
+    flex: 0.99;
+    margin: 0;
+    padding: 0;
+
+    section {
+      flex-direction: column;
+      flex: 15em;
+      padding: 0.5em;
+      margin: 0;
+    }
+  }
 }
