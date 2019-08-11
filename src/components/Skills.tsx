@@ -11,7 +11,7 @@ export default () => (
   <section className="skills">
     <h1>Skills</h1>
 
-    <h2>Programminng</h2>
+    <h2>Programming</h2>
     <p>{Programming.map(s => s.title).join(" | ")}</p>
     <p>{Frameworks.map(s => s.title).join(" | ")}</p>
 
