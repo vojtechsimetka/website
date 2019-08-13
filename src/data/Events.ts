@@ -48,6 +48,16 @@ export default [
     [{ title: "To be announced", type: ETalkType.PANEL }]
   ),
   new Event(
+    "Decentralised Storage Summit",
+    EEventType.CONFERENCE,
+    new Date("2019-08-23"),
+    new Date("2019-08-23"),
+    "Berlin",
+    ELocations.GERMANY,
+    "https://www.eventbrite.com/e/decentralised-storage-summit-tickets-62719912948",
+    null
+  ),
+  new Event(
     "WEB3 Summit 2019",
     EEventType.CONFERENCE,
     new Date("2019-08-19"),
