@@ -11,7 +11,8 @@ export enum ETalkType {
   PRESENTATION = "Presentation",
   DEMO = "Demo",
   JUDGE = "Judge",
-  MENTOR = "Mentor"
+  MENTOR = "Mentor",
+  WORKSHOP = "Workshop"
 }
 
 export const compare = (e1: Event, e2: Event) =>

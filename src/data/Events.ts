@@ -45,7 +45,7 @@ export default [
     "Cape Town",
     ELocations.SOUTH_AFRICA,
     "https://cryptofest.co.za/",
-    [{ title: "To be announced", type: ETalkType.PANEL }]
+    [{ title: "Blockchain for Social Good", type: ETalkType.PANEL }]
   ),
   new Event(
     "Decentralised Storage Summit",
@@ -55,7 +55,7 @@ export default [
     "Berlin",
     ELocations.GERMANY,
     "https://www.eventbrite.com/e/decentralised-storage-summit-tickets-62719912948",
-    null
+    [{ title: "RIF Storage", type: ETalkType.PRESENTATION }]
   ),
   new Event(
     "WEB3 Summit 2019",
@@ -65,7 +65,14 @@ export default [
     "Berlin",
     ELocations.GERMANY,
     "https://web3summit.com/",
-    null
+    [
+      {
+        title: "#Coalitions4GOOD Node",
+        type: ETalkType.WORKSHOP,
+        presentation:
+          "https://docs.google.com/document/d/1nwl3whXIalTZb9JxNU_DQ3WoEnP7bJ0GjSJ8nrmyWEY/edit?usp=sharing"
+      }
+    ]
   ),
   new Event(
     "Blockchance",
@@ -236,6 +243,22 @@ export default [
     ]
   ),
   new Event(
+    "Blockchain for Good workshop",
+    EEventType.CONFERENCE,
+    new Date("2018-10-31"),
+    new Date("2018-10-31"),
+    "Prague",
+    ELocations.CZECH_REPUBLIC,
+    "https://devcon4.ethereum.org/index.html",
+    [
+      {
+        type: ETalkType.PANEL,
+        title: "Experience of building and funding dApps",
+        video: "https://youtu.be/oh6fWaX2MWw?t=1470"
+      }
+    ]
+  ),
+  new Event(
     "Devcon4",
     EEventType.CONFERENCE,
     new Date("2018-10-30"),
@@ -323,6 +346,23 @@ export default [
     null
   ),
   new Event(
+    "Innovators Forum 2018",
+    EEventType.CONFERENCE,
+    new Date("2018-02-27"),
+    new Date("2018-02-28"),
+    "Berlin",
+    ELocations.GERMANY,
+    "https://icscentre.org/",
+    [
+      {
+        type: ETalkType.PRESENTATION,
+        title: "Giveth",
+        presentation:
+          "https://drive.google.com/open?id=1b1ISH__52LTfJvTMu51-OXUcH_TFrxIU"
+      }
+    ]
+  ),
+  new Event(
     "Future Club: Blockchain for fundraising",
     EEventType.CONFERENCE,
     new Date("2018-01-17"),
@@ -335,11 +375,11 @@ export default [
   new Event(
     "laBITconf",
     EEventType.CONFERENCE,
-    new Date("2017-12-10"),
-    new Date("2017-12-10"),
+    new Date("2017-12-04"),
+    new Date("2017-12-05"),
     "Bogota",
     ELocations.COLOMBIA,
-    "https://www.labitconf.com/",
+    "https://2017.labitconf.com/",
     null
   ),
   new Event(

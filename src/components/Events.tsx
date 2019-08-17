@@ -11,7 +11,7 @@ interface IEventsState {
   events: Array<Event>;
 }
 
-const NOW = new Date().getTime();
+const NOW = new Date().getTime() - 86400000;
 
 export default class Events extends React.Component<
   IEventsProps,
