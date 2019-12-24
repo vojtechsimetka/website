@@ -22,8 +22,21 @@ export default [
     "https://www.labitconf.com/",
     [
       {
-        title: "To be announced",
+        title: "Decentralized storage vs cloud storage",
         type: ETalkType.PANEL
+      },
+      {
+        title: "RSK/RIF technology stack intro",
+        type: ETalkType.PRESENTATION
+      },
+      {
+        title: "RSK/RIF stack hands on ",
+        type: ETalkType.DEMO
+      },
+      {
+        title: "Blockchain for Humanity Awards 2019",
+        type: ETalkType.PRESENTATION,
+        video: "https://youtu.be/esaaWu579wk?t=27460"
       }
     ]
   ),
@@ -35,7 +48,20 @@ export default [
     "Osaka",
     ELocations.JAPAN,
     "https://devcon5.ethereum.org/index.html",
-    null
+    [
+      {
+        title: "Distributed storage meets incentivization on Swarm",
+        type: ETalkType.PRESENTATION,
+        presentation:
+          "https://github.com/ethersphere/devconV/tree/master/PRESENTATIONS/Distributed%20storage%20meets%20incentivization%20on%20Swarm"
+      },
+      {
+        title: "Swarm for Node Operators - Run an incentivised Swarm node",
+        type: ETalkType.WORKSHOP,
+        presentation:
+          "https://github.com/ethersphere/devconV/blob/master/WORKSHOPS/Incentivized/WORKSHOP.md"
+      }
+    ]
   ),
   new Event(
     "Crypto Fest",
