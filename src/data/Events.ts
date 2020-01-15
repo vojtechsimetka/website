@@ -13,6 +13,16 @@ export default [
     [{ title: "To be announced", type: ETalkType.PRESENTATION }]
   ),
   new Event(
+    "ETHDenver",
+    EEventType.HACKATHON,
+    new Date("2020-02-14"),
+    new Date("2020-02-16"),
+    "Denver",
+    ELocations.UNITED_STATES,
+    "https://www.ethdenver.com/",
+    [{ type: ETalkType.JUDGE }]
+  ),
+  new Event(
     "laBITconf",
     EEventType.CONFERENCE,
     new Date("2019-12-12"),
@@ -231,7 +241,7 @@ export default [
     new Date("2019-02-17"),
     "Denver",
     ELocations.UNITED_STATES,
-    "https://www.ethdenver.com/",
+    "https://2019.ethdenver.com/",
     [{ type: ETalkType.JUDGE }]
   ),
   new Event(
