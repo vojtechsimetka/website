@@ -23,6 +23,16 @@ export default [
     [{ type: ETalkType.JUDGE }]
   ),
   new Event(
+    "Distributed Networks Summit – IPFS & Friends",
+    EEventType.MEETUP,
+    new Date("2020-02-13"),
+    new Date("2020-02-13"),
+    "Denver",
+    ELocations.UNITED_STATES,
+    "https://www.eventbrite.com/e/distributed-networks-summit-ipfs-friends-tickets-86959928487",
+    []
+  ),
+  new Event(
     "laBITconf",
     EEventType.CONFERENCE,
     new Date("2019-12-12"),
