@@ -33,6 +33,21 @@ export default [
     []
   ),
   new Event(
+    "Decentralised storage and communication",
+    EEventType.MEETUP,
+    new Date("2020-01-22"),
+    new Date("2020-01-22"),
+    "Montevideo",
+    ELocations.URUGUAY,
+    "https://www.meetup.com/meetup-group-ClIOwuPW/events/268009155/",
+    [
+      {
+        type: ETalkType.PRESENTATION,
+        title: "Decentralised storage and communication"
+      }
+    ]
+  ),
+  new Event(
     "laBITconf",
     EEventType.CONFERENCE,
     new Date("2019-12-12"),
