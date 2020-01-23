@@ -30,7 +30,7 @@ export default [
     "Denver",
     ELocations.UNITED_STATES,
     "https://www.eventbrite.com/e/distributed-networks-summit-ipfs-friends-tickets-86959928487",
-    []
+    null
   ),
   new Event(
     "Decentralised storage and communication",
@@ -43,7 +43,9 @@ export default [
     [
       {
         type: ETalkType.PRESENTATION,
-        title: "Decentralised storage and communication"
+        title: "Decentralised storage and communication",
+        presentation:
+          "https://docs.google.com/presentation/d/1cAwJt03cBg4cDOvlHU2XlGYy4_uezOhI0AC5lP0nino/edit?usp=sharing"
       }
     ]
   ),
@@ -58,7 +60,8 @@ export default [
     [
       {
         title: "Decentralized storage vs cloud storage",
-        type: ETalkType.PANEL
+        type: ETalkType.PANEL,
+        video: "https://youtu.be/hH8n2vk0yaI?t=16815"
       },
       {
         title: "RSK/RIF technology stack intro",
