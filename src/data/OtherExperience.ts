@@ -2,6 +2,17 @@ import Work from "models/Work";
 
 export default [
   new Work(
+    "ETHDENVER",
+    "Judge",
+    "",
+    null,
+    new Date("2019-02-14"),
+    new Date("2019-02-16"),
+    "Denver",
+    "CO",
+    "https://www.ethdenver.com/"
+  ),
+  new Work(
     "LEDGER",
     "External Technical Evaluator",
     "",
@@ -21,7 +32,7 @@ export default [
     new Date("2019-02-17"),
     "Denver",
     "CO",
-    "https://www.ethdenver.com/"
+    "https://www.2019.ethdenver.com/"
   ),
   new Work(
     "#cryptolife",

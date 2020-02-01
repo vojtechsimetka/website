@@ -91,13 +91,19 @@ export default [
         title: "Distributed storage meets incentivization on Swarm",
         type: ETalkType.PRESENTATION,
         presentation:
-          "https://github.com/ethersphere/devconV/tree/master/PRESENTATIONS/Distributed%20storage%20meets%20incentivization%20on%20Swarm"
+          "https://github.com/ethersphere/devconV/tree/master/PRESENTATIONS/Distributed%20storage%20meets%20incentivization%20on%20Swarm",
+        video: "https://youtu.be/NoCyZI2F1d0?t=2120"
       },
       {
         title: "Swarm for Node Operators - Run an incentivised Swarm node",
         type: ETalkType.WORKSHOP,
         presentation:
           "https://github.com/ethersphere/devconV/blob/master/WORKSHOPS/Incentivized/WORKSHOP.md"
+      },
+      {
+        title: "Swarm Open Panel",
+        type: ETalkType.PANEL,
+        video: "https://youtu.be/NoCyZI2F1d0?t=15247"
       }
     ]
   ),
