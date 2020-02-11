@@ -33,6 +33,16 @@ export default [
     null
   ),
   new Event(
+    "Learn about Smart Contracts, Solidity, dApps powered by RSK + RIF",
+    EEventType.MEETUP,
+    new Date("2020-02-11"),
+    new Date("2020-02-11"),
+    "Denver",
+    ELocations.UNITED_STATES,
+    "https://www.eventbrite.com/e/learn-about-smart-contracts-solidity-dapps-powered-by-rsk-rif-tickets-92415432045",
+    [{type: ETalkType.PRESENTATION, title: "RIF stack", presentation: "https://docs.google.com/presentation/d/1GYHxchEwN306qw6sp-1Z93wnghQ11Yxfs8qrV8BbSvE/edit?usp=sharing"}]
+  ),
+  new Event(
     "Decentralised storage and communication",
     EEventType.MEETUP,
     new Date("2020-01-22"),
