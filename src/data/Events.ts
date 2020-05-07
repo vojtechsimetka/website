@@ -13,6 +13,16 @@ export default [
     [{ title: "To be announced", type: ETalkType.PRESENTATION }]
   ),
   new Event(
+    "Consensus",
+    EEventType.HACKATHON,
+    new Date("2020-05-11"),
+    new Date("2020-05-15"),
+    "NYC",
+    ELocations.UNITED_STATES,
+    "https://www.coindesk.com/events/consensus-2020",
+    [{ type: ETalkType.PRESENTATION, title: "RSK Infrastructure Framework (RIF) the building blocks of a truly decentralized Internet" }]
+  ),
+  new Event(
     "ETHDenver",
     EEventType.HACKATHON,
     new Date("2020-02-14"),
