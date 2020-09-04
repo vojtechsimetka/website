@@ -13,7 +13,7 @@ export default [
       "Representing RIF & RSK in conferences"
     ],
     new Date("2019-04-01"),
-    null,
+    new Date("2020-08-01"),
     "Gibraltar",
     "GI",
     "https://www.rifos.org/"

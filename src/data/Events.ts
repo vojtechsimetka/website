@@ -3,14 +3,40 @@ import Event, { EEventType, ETalkType, compare } from "models/Event";
 
 export default [
   new Event(
-    "NON central CONF",
+    "UNCHAIN Convention 2019",
     EEventType.CONFERENCE,
-    new Date("2020-06-22"),
-    new Date("2020-06-24"),
-    "Leon",
-    ELocations.SPAIN,
-    "https://www.noncentralconf.com/",
-    [{ title: "To be announced", type: ETalkType.PRESENTATION }]
+    new Date("2020-08-28"),
+    new Date("2020-08-29"),
+    "Frankfurt",
+    ELocations.GERMANY,
+    "https://www.unchain-convention.com/",
+    []
+  ),
+  new Event(
+    "Empowering Socia-Economic Networks",
+    EEventType.MEETUP,
+    new Date("2020-08-27"),
+    new Date("2020-08-27"),
+    "Frankfurt",
+    ELocations.GERMANY,
+    "https://www.meetup.com/b4H_Global/events/272123919/",
+    []
+  ),
+  new Event(
+    "RIF Expert Panel",
+    EEventType.MEETUP,
+    new Date("2020-08-25"),
+    new Date("2020-08-25"),
+    "online",
+    ELocations.CZECH_REPUBLIC,
+    "https://www.meetup.com/b4H_Global/events/272123919/",
+    [
+      {
+        type: ETalkType.PANEL,
+        title: "The State of Decentralized Storage",
+        video: "https://www.youtube.com/watch?v=L_pkc4tmvU8"
+      }
+    ]
   ),
   new Event(
     "Consensus",
@@ -20,7 +46,13 @@ export default [
     "NYC",
     ELocations.UNITED_STATES,
     "https://www.coindesk.com/events/consensus-2020",
-    [{ type: ETalkType.PRESENTATION, title: "RSK Infrastructure Framework (RIF) the building blocks of a truly decentralized Internet" }]
+    [
+      {
+        type: ETalkType.PRESENTATION,
+        title:
+          "RSK Infrastructure Framework (RIF) the building blocks of a truly decentralized Internet"
+      }
+    ]
   ),
   new Event(
     "ETHDenver",
@@ -50,7 +82,14 @@ export default [
     "Denver",
     ELocations.UNITED_STATES,
     "https://www.eventbrite.com/e/learn-about-smart-contracts-solidity-dapps-powered-by-rsk-rif-tickets-92415432045",
-    [{type: ETalkType.PRESENTATION, title: "RIF stack", presentation: "https://docs.google.com/presentation/d/1GYHxchEwN306qw6sp-1Z93wnghQ11Yxfs8qrV8BbSvE/edit?usp=sharing"}]
+    [
+      {
+        type: ETalkType.PRESENTATION,
+        title: "RIF stack",
+        presentation:
+          "https://docs.google.com/presentation/d/1GYHxchEwN306qw6sp-1Z93wnghQ11Yxfs8qrV8BbSvE/edit?usp=sharing"
+      }
+    ]
   ),
   new Event(
     "Decentralised storage and communication",
